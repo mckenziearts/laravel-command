@@ -1,4 +1,9 @@
-# laravel-command
+# Laravel-command
+
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/mckenziearts/laravel-command.svg?style=flat-square)](https://packagist.org/packages/mckenziearts/laravel-command)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/mckenziearts/laravel-command.svg?style=flat-square)](https://scrutinizer-ci.com/g/mckenziearts/laravel-command/code-structure)
+[![Build Status](https://scrutinizer-ci.com/g/Mckenziearts/laravel-command/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Mckenziearts/laravel-command/build-status)
+
 
 Simple package to quickly generate Laravel templated Repository, Helpers and Observer files.
 
