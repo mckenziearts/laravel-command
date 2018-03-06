@@ -14,7 +14,7 @@ Simple package to quickly generate Laravel templated Repository, Helpers and Obs
 Via Composer
 
 ``` bash
-$ composer require mckenziearts/laravel-command
+$ composer require mckenziearts/laravel-command dev-master
 ```
 
 For Laravel 5.5 - you're done.
@@ -47,7 +47,7 @@ namespace App\Repositories;
 
 use App\Entity;
 
-class UserRepository
+class EntityRepository
 {
     /**
      * @var Entity
