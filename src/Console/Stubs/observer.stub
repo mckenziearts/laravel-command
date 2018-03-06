@@ -2,49 +2,49 @@
 
 namespace DummyNamespace;
 
-use DummyModelClass;
+use App\DummyClass;
 
-class DummyClass
+class DummyClassObserver
 {
     /**
-     * Trigger Before Create a DummyModelClass
+     * Trigger Before Create a DummyClass
      *
-     * @param DummyModelClass $dummyModel
+     * @param DummyClass $model
      */
-    public function creating(DummyModelClass $dummyModel){}
+    public function creating(DummyClass $model){}
 
     /**
-     * Trigger after create a DummyModelClass
+     * Trigger after create a DummyClass
      *
-     * @param DummyModelClass $dummyModel
+     * @param DummyClass $model
      */
-    public function created(DummyModelClass $dummyModel){}
+    public function created(DummyClass $model){}
 
     /**
-     * Trigger before update a DummyModelClass
+     * Trigger before update a DummyClass
      *
-     * @param DummyModelClass $dummyModel
+     * @param DummyClass $model
      */
-    public function updating(DummyModelClass $dummyModel){}
+    public function updating(DummyClass $model){}
 
     /**
-     * Trigger after update a DummyModelClass
+     * Trigger after update a DummyClass
      *
-     * @param DummyModelClass $dummyModel
+     * @param DummyClass $model
      */
-    public function updated(DummyModelClass $dummyModel){}
+    public function updated(DummyClass $model){}
 
     /**
-     * Trigger before delete a DummyModelClass
+     * Trigger before delete a DummyClass
      *
-     * @param DummyModelClass $dummyModel
+     * @param DummyClass $model
      */
-    public function deleting(DummyModelClass $dummyModel){}
+    public function deleting(DummyClass $model){}
 
     /**
-     * Trigger after delete a DummyModelClass
+     * Trigger after delete a DummyClass
      *
-     * @param DummyModelClass $dummyModel
+     * @param DummyClass $model
      */
-    public function deleted(DummyModelClass $dummyModel){}
+    public function deleted(DummyClass $model){}
 }
