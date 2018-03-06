@@ -1,14 +1,44 @@
 {
     "name": "mckenziearts/laravel-command",
-    "description": "A Laravel package to provide artisan new commands",
-    "type": "laravel, artisan-cli, command, php",
+    "version": "1.0.0",
+    "description": "A simple Laravel package to provide artisan new commands",
+    "type":"laravel-package",
+    "keywords": [
+        "generators",
+        "laravel",
+        "artisan-cli",
+        "observer",
+        "helper",
+        "repository"
+    ],
+    "homepage": "https://github.com/Mckenziearts/laravel-command",
     "license": "MIT",
     "authors": [
         {
-            "name": "Mckenzie Arts",
-            "email": "monneylobe@gmail.com"
+            "name": "Arthur Monney",
+            "email": "monneylobe@gmail.com",
+            "homepage": "http://www.twitter.com/mckenziearts",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "dev",
-    "require": {}
+    "require": {
+        "illuminate/support": ">=5.1",
+        "illuminate/console": ">=5.1",
+        "php" : ">=5.5.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mckenziearts\\LaravelCommand\\": "src"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mckenziearts\\LaravelCommand\\LaravelCommandServiceProvider"
+            ]
+        }
+    }
 }
