@@ -1,0 +1,50 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyModelClass;
+
+class DummyClass
+{
+    /**
+     * Trigger Before Create a DummyModelClass
+     *
+     * @param DummyModelClass $dummyModel
+     */
+    public function creating(DummyModelClass $dummyModel){}
+
+    /**
+     * Trigger after create a DummyModelClass
+     *
+     * @param DummyModelClass $dummyModel
+     */
+    public function created(DummyModelClass $dummyModel){}
+
+    /**
+     * Trigger before update a DummyModelClass
+     *
+     * @param DummyModelClass $dummyModel
+     */
+    public function updating(DummyModelClass $dummyModel){}
+
+    /**
+     * Trigger after update a DummyModelClass
+     *
+     * @param DummyModelClass $dummyModel
+     */
+    public function updated(DummyModelClass $dummyModel){}
+
+    /**
+     * Trigger before delete a DummyModelClass
+     *
+     * @param DummyModelClass $dummyModel
+     */
+    public function deleting(DummyModelClass $dummyModel){}
+
+    /**
+     * Trigger after delete a DummyModelClass
+     *
+     * @param DummyModelClass $dummyModel
+     */
+    public function deleted(DummyModelClass $dummyModel){}
+}
