@@ -1,0 +1,14 @@
+{
+    "name": "mckenziearts/laravel-command",
+    "description": "A Laravel package to provide artisan new commands",
+    "type": "laravel, artisan-cli, command, php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mckenzie Arts",
+            "email": "monneylobe@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
