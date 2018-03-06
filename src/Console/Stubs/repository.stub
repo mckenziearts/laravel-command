@@ -1,0 +1,37 @@
+<?php
+/**
+ * @copyright Copyright (c) 2018. MckenzieArts
+ * @author    Mckenziearts <monneylobe@gmail.com>
+ * @link      https://github.com/Mckenziearts/laravel-command
+ */
+
+namespace DummyNamespace;
+
+use App\DummyClass;
+
+class DummyClassRepository
+{
+    /**
+     * @var DummyClass
+     */
+    private $model;
+
+    /**
+     * DummyClassRepository constructor.
+     * @param DummyClass $model
+     */
+    public function __construct(DummyClass $model)
+    {
+        $this->model = $model;
+    }
+
+    /**
+     * Return a new instance of DummyClass Model
+     *
+     * @return DummyClass
+     */
+    public function newInstance()
+    {
+        return $this->model->newInstance();
+    }
+}
