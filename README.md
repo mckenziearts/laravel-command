@@ -47,7 +47,7 @@ namespace App\Repositories;
 
 use App\Entity;
 
-class UserRepository
+class EntityRepository
 {
     /**
      * @var Entity
