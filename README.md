@@ -108,7 +108,7 @@ class EntityObserver
      *
      * @param Entity $model
      */
-    public function updating(User $model){}
+    public function updating(Entity $model){}
 
     ...
 }
