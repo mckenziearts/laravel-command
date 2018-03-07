@@ -31,10 +31,12 @@
             "Mckenziearts\\LaravelCommand\\": "src"
         }
     },
-    "scripts": {
-        "test": "phpunit"
-    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        },
         "laravel": {
             "providers": [
                 "Mckenziearts\\LaravelCommand\\LaravelCommandServiceProvider"
