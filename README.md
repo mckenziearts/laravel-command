@@ -37,7 +37,7 @@ By default Laravel does not allow to generate observers or even does not allow t
 Open the console and enter this command to generate a new repository :
 
 ```shell
-php artisan laravel:repository {Entity}
+php artisan make:repository {Entity}
 ```
 
 The generate file look like this :
@@ -45,7 +45,7 @@ The generate file look like this :
 ```php
 namespace App\Repositories;
 
-use App\Entity;
+use App\Models\Entity;
 
 class EntityRepository
 {
@@ -75,16 +75,16 @@ class EntityRepository
 }
 ```
 
-By default Repository load Model in the default application namespace `App\` If your models are in another namespace, it will be necessary to change the use in the repository to have no error like :
+By default Repository load Model in the default application namespace `App\Models` If your models are in another namespace, it will be necessary to change the use in the repository to have no error like :
 
 ```php
 use MODELS\NAMESPACE\Entity;
 ```
 
-This is the same action to perform for the observers, it also loads the models in the default namespace App \. To generate an observer, you must execute the command:
+This is the same action to perform for the observers, it also loads the models in the namespace App\Models. To generate an observer, you must execute the command:
 
 ```shell
-php artisan laravel:observer {Entity}
+php artisan make:observer {Entity}
 ```
 
 The generate file look like this :
@@ -92,7 +92,7 @@ The generate file look like this :
 ```php
 namespace App\Observers;
 
-use App\Entity;
+use App\Models\Entity;
 
 class EntityObserver
 {
@@ -125,7 +125,7 @@ class EntityObserver
 - Helper files
 
 ``` bash
-$ php artisan laravel:helper {Entity}
+$ php artisan make:helper {Entity}
 ```
 
 The generate file look like this :
@@ -188,10 +188,10 @@ class MediaHelper
     /**
      * resize, To rezise and image
      *
-     * @param string    $file,      l'image à redimmensionner
-     * @param int       $width,     la largeur à laquelle on doit redimensionner l'image
-     * @param int       $height,    la hateur à laquelle on doit redimensionner l'image
-     * @param string    $filepath,  le chemin ou est garder le fichier redimensionner
+     * @param string    $file      file to rezise
+     * @param int       $width     width of the file
+     * @param int       $height    height of the file
+     * @param string    $filepath  path to save file
      */
     public static function resize($file, $width, $height, $filepath)
     {
@@ -199,7 +199,7 @@ class MediaHelper
     }
 
     /**
-     * getImageWeight, permet de retourner le poids d'une image
+     * getImageWeight
      *
      * @param $octets
      * @return string
