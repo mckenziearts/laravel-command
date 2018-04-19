@@ -11,14 +11,14 @@ class LaravelHelperCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'laravel:helper';
+    protected $name = 'make:helper';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'laravel:helper {name}';
+    protected $signature = 'make:helper {name}';
 
     /**
      * The console command description.
@@ -41,7 +41,7 @@ class LaravelHelperCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/../Stubs/helper.stub';
+        return __DIR__ . '/../Stubs/helper.stub';
     }
 
     /**

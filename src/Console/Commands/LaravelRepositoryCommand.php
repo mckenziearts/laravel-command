@@ -11,14 +11,14 @@ class LaravelRepositoryCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'laravel:repository';
+    protected $name = 'make:repository';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'laravel:repository {name}';
+    protected $signature = 'make:repository {name}';
 
     /**
      * The console command description.
@@ -41,7 +41,7 @@ class LaravelRepositoryCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/../Stubs/repository.stub';
+        return __DIR__ . '/../Stubs/repository.stub';
     }
 
     /**

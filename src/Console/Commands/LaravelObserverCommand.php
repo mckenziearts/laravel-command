@@ -11,14 +11,14 @@ class LaravelObserverCommand extends GeneratorCommand
      *
      * @var string
      */
-    protected $name = 'laravel:observer';
+    protected $name = 'make:observer';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'laravel:observer {name}';
+    protected $signature = 'make:observer {name}';
 
     /**
      * The console command description.
@@ -41,7 +41,7 @@ class LaravelObserverCommand extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/../Stubs/observer.stub';
+        return __DIR__ . '/../Stubs/observer.stub';
     }
 
     /**
