@@ -2,7 +2,6 @@
 
 [![Latest Stable Version](https://poser.pugx.org/mckenziearts/laravel-command/version)](https://packagist.org/packages/mckenziearts/laravel-command)
 [![License](https://poser.pugx.org/mckenziearts/laravel-command/license)](https://packagist.org/packages/mckenziearts/laravel-command)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/mckenziearts/laravel-command.svg?style=flat-square)](https://scrutinizer-ci.com/g/mckenziearts/laravel-command/code-structure)
 [![Build Status](https://scrutinizer-ci.com/g/Mckenziearts/laravel-command/badges/build.png?b=master)](https://scrutinizer-ci.com/g/Mckenziearts/laravel-command/build-status)
 [![Total Downloads](https://poser.pugx.org/mckenziearts/laravel-command/downloads)](https://packagist.org/packages/mckenziearts/laravel-command)
 
