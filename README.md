@@ -13,7 +13,7 @@ Simple package to quickly generate Laravel templated Repository, Helpers and Obs
 Via Composer
 
 ``` bash
-$ composer require mckenziearts/laravel-command 1.0.x-dev
+$ composer require mckenziearts/laravel-command --dev
 ```
 
 For Laravel 5.5 - you're done.
