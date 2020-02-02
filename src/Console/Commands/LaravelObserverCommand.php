@@ -54,7 +54,8 @@ class LaravelObserverCommand extends GeneratorCommand
     protected function getPath($name)
     {
         $name = str_replace($this->laravel->getNamespace(), '', $name);
-        return $this->laravel['path'].'/'.str_replace('\\', '/', $name).'Observer.php';
+        $suffix = (substr($name , -strlen('Observer')) === 'Observer') ? '.php' : 'Observer.php';
+        return $this->laravel['path'].'/'.str_replace('\\', '/', $name).$suffix;
     }
 
     /**

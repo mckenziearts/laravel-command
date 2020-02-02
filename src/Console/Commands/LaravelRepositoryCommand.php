@@ -54,7 +54,8 @@ class LaravelRepositoryCommand extends GeneratorCommand
     protected function getPath($name)
     {
         $name = str_replace($this->laravel->getNamespace(), '', $name);
-        return $this->laravel['path'].'/'.str_replace('\\', '/', $name).'Repository.php';
+        $suffix = (substr($name , -strlen('Repository')) === 'Repository') ? '.php' : 'Repository.php';
+        return $this->laravel['path'].'/'.str_replace('\\', '/', $name) . $suffix;
     }
 
     /**
